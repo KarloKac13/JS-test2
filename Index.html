@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        html,body {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .flexBox {
+                height: 100%;
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .divs{
+                height: 100%;
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+        </style>
+        <title> Zadatak 7 </title>
+    </head>
+    <body>
+        <div class="flexBox">
+            <div class="divs">
+                <select type="text" id="people" >
+                    <option>-- Select type of person --</option>
+                </select>
+                <select type="number" id="number">
+                    <option>-- Select how many you want to generate --</option>
+                </select>
+                <button onclick="generatePeople()">Generate</button>
+                <button onclick="sortPeopleByHeight()">Sort by height</button>
+                <button onclick="filterPeopleByBlondeHair()">All people with blonde hair</button>
+                <button onclick="filterPeopleByWorkplace()">All people working in "firma2"</button>
+                <button onclick="tallestPerson()" >JSON of tallest person</button>
+                <button onclick="heightGreaterThanWeight()">Height greater than weight by 80 or more</button>
+                <button onclick="peopleWithoutBlondeHair()">People who DON'T have blonde hair</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
